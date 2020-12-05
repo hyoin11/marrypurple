@@ -1,0 +1,206 @@
+@media (max-width: 768px){
+    /* profile_main */
+    #content #profileM { 
+        width: 100%;
+        text-align: left
+    }
+    #content #profileM dd { 
+        width: 100%; 
+        height: 60px; 
+        padding-left: 16px; 
+        border-bottom: 1px solid #E8E8E8;
+        line-height: 60px; 
+        background: #fff; 
+        position: relative; 
+        box-sizing: border-box; 
+    }
+    #content #profileM a:first-child dd, #content #profileM a:nth-child(4) dd, #content #profileM a:nth-child(6) dd, #content #profileM a:nth-child(8) dd, #content #profileM a:nth-child(10) dd, #content #profileM a:nth-child(14) dd, #content #profileM a:nth-child(15) dd, #content #profileM a:nth-child(16) dd { 
+        border-top: 1px solid #E8E8E8; 
+    }
+    #content #profileM h2 { 
+        margin-top: 20px; 
+        padding: 8px 16px; 
+        font-size: 16px; 
+        font-weight: 600; 
+    }
+    #content #profileM a:nth-child(15) dd, #content #profileM a:nth-child(16) dd { 
+        margin-top: 20px; 
+        text-align: center; 
+    }
+    #content #profileM dl dd .sub_menu_myprofile_icon { 
+        position: absolute; 
+        right: 16px; 
+        top: -2px; 
+        font-size: 20px; 
+    }
+    #content #profileM dl dd .sub_menu_myprofile_gender { 
+        position: absolute; 
+        right: 35px; 
+    }
+    #content #profileM dl dd:hover span { 
+        color: #9E7FFE; 
+    }
+    
+    #content #profileM .input_type_radio3 { 
+        height: 40px; 
+        background-color: #fff; 
+        white-space: nowrap; 
+        font-size: 0; 
+        display: inline-block; 
+        position: absolute; 
+        right: 16px; 
+    }
+    #content #profileM .input_type_radio3 input { 
+        display: none; 
+    }
+    #content #profileM .input_type_radio3 label { 
+        display: inline-block; 
+        font-size: 16px; 
+        line-height: 20px; 
+        color: #fff; 
+        text-align: center; 
+        vertical-align: middle; 
+        cursor: pointer; 
+        background-color: #d1c2ff; 
+        width: 50px; 
+        height: 30px; 
+        padding-top: 5px; 
+        box-sizing: border-box; 
+        text-shadow: 0 1px 0px rgba(255, 255, 255, 0.75); 
+    }
+    #content #profileM .input_type_radio3 label:nth-child(2) { 
+        border-top-left-radius: 8px; 
+        border-bottom-left-radius: 8px; 
+    }
+    #content #profileM #md3 { 
+        margin-left: 1px; 
+        margin-right: 1px; 
+    }
+    #content #profileM .input_type_radio3 label:last-child { 
+        border-top-right-radius: 8px; 
+        border-bottom-right-radius: 8px; 
+    }
+    #content #profileM .input_type_radio3 input:checked + label { 
+        outline: 0; 
+        color: #fff; 
+        box-shadow: inset 0 3px 3px rgba(0, 0, 0, 0.2), 0 1px 2px rgba(0, 0, 0, 0.1); 
+        background-color: #9E7FFE; 
+    }
+    #content #profileM a:hover dd > span { 
+        color: #9E7FFE; 
+    }
+    #content #profileM dd > span { 
+        position: absolute; 
+        right: 16px; 
+    }
+
+    #content #profileM div:nth-child(5) dd { 
+        height: 90px; 
+        padding-right: 16px; 
+    }
+
+    .slider2 { 
+        width: 100%; 
+        position: relative; 
+        height: 3px; 
+    }
+    .slider2 > div { 
+        position: absolute; 
+        left: 13px; 
+        right: 15px; 
+        height: 3px; 
+    }
+    .slider2 > div > .inverse-left { 
+        position: absolute; 
+        left: 0; 
+        height: 3px; 
+        border-radius: 10px; 
+        background-color: #CCC; 
+        margin: 0 7px; 
+    }
+    .slider2 > div > .inverse-right { 
+        position: absolute; 
+        right: 0; 
+        height: 3px; 
+        border-radius: 10px; 
+        background-color: #CCC; 
+        margin: 0 7px; 
+    }
+    .slider2 > div > .range { 
+        position: absolute; 
+        left: 0; 
+        height: 3px; 
+        border-radius: 14px; 
+        background-color: #9E7FFE; 
+    }
+    .slider2 > div > .thumb { 
+        position: absolute; 
+        top: -10px; 
+        z-index: 2; 
+        height: 20px; 
+        width: 20px; 
+        text-align: left; 
+        margin-left: -11px; cursor: pointer; 
+        box-shadow: 0 3px 8px rgba(0, 0, 0, 0.4); 
+        background-color: #FFF; 
+        border-radius: 50%; 
+        outline: none; 
+        border: 1px solid #e8e8e8; 
+    }
+    .slider2 > input[type=range] { 
+        position: absolute; 
+        pointer-events: none; 
+        -webkit-appearance: none; 
+        z-index: 3; 
+        height: 14px; 
+        top: -2px; 
+        width: 100%; 
+        opacity: 0; 
+    }
+    .slider2 > input[type=range]:focus::-webkit-slider-runnable-track { 
+        background: transparent; 
+        border: transparent; 
+    }
+    .slider2 > input[type=range]:focus { 
+        outline: none; 
+    }
+    .slider2 > input[type=range]::-webkit-slider-thumb { 
+        pointer-events: all; 
+        width: 28px; 
+        height: 28px; 
+        border-radius: 0px; 
+        border: 0 none; 
+        background: #5c9dff; 
+        -webkit-appearance: none; 
+    }
+    .slider2 > input[type=range]::-ms-fill-lower { 
+        background: transparent; 
+        border: 0 none; 
+    }
+    .slider2 > input[type=range]::-ms-fill-upper { 
+        background: transparent; 
+        border: 0 none; 
+    }
+    .slider2 > input[type=range]::-ms-tooltip { 
+        display: none; 
+    }
+    .slider2 > div > .sign { 
+        opacity: 1; 
+        position: absolute; 
+        margin-left: -11px; 
+        top: -60px; 
+        z-index:3; 
+        color: #000; 
+        width: 28px; 
+        height: 28px; 
+        border-radius: 28px; -webkit-border-radius: 28px; align-items: center; 
+        -webkit-justify-content: center; 
+        justify-content: center; 
+        text-align: center; 
+    }
+    #slider-between { 
+        position: absolute; 
+        top: -60px; 
+        right: 12%; 
+    }
+}

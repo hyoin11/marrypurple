@@ -1,0 +1,119 @@
+#contentBox .world2_1 { 
+    background-color: #BCA6EC;  
+    text-align: center; 
+    vertical-align: middle; 
+}
+#contentBox .world2_1 .world2_1_header { 
+    border-bottom: 5px groove darkgray;  
+    vertical-align: middle;
+}
+#contentBox .world2_1 .world2_1_header .Wcup { 
+    margin-left: 10px; 
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%; 
+    display: inline-block; 
+    margin-right: 8px; 
+    margin-top: 8px; 
+    margin-bottom: 10px; 
+}
+#contentBox .world2_1 .world2_1_header .Wcup div{ 
+    width: 100%; 
+    height: 100%; 
+    background: url('../images/images/Wcup.png') no-repeat; 
+    background-size: 100%; 
+    display: inline-block; 
+    border-radius: 50%; 
+}
+#contentBox .world2_1 .world2_1_header span { 
+    color: #fff; 
+    font-size: 20px; 
+    font-weight: 500;
+}
+#contentBox .world2_1 a { 
+    width: 100%; 
+}
+#contentBox .world2_2 { 
+    width:100%; 
+    height: 647px; 
+}
+// #contentBox .world2_2 p { 
+//     margin-bottom: 5px; 
+//     font-size: 68px; 
+//     font-weight: bold; 
+//     color: #fff; 
+//     letter-spacing: 25px; 
+//     margin-left: 20px; 
+// }
+#contentBox .world2_2 .world2_2_picture {
+    width: 100%;
+    height: 40%;
+    display: block;
+    text-align: center;
+}
+#contentBox .world2_2 div:first-child {
+    margin-top: 30px;
+}
+#contentBox .world2_2 div:last-child::before {
+    content: url('../images/images/fight2.png');
+    width: 100%;
+    height: 65px;
+    display: block;
+    padding-top: 3px;
+}
+#contentBox .world2_2_picture img {
+    height: 100%;
+    size: 100%;
+}
+// .picture1 {
+//     width: 100%; 
+//     height: 40%;  
+//     display: inline-block; 
+//     margin-top: 30px;
+// }
+// .picture1 button {
+//     width: 100%; 
+//     height: 100%; 
+//     background: url('../images/images/picture1.jpg')no-repeat; 
+//     background-size: auto; 
+//     display: inline-block; 
+//     background-position: center; 
+//     cursor: pointer; 
+//     border: 0; 
+// }
+// .picture2 {
+//     width: 100%; 
+//     height: 40%;  
+//     display: inline-block;
+// }
+// .picture2 button {
+//     width: 100%; 
+//     height: 100%; 
+//     background: url('../images/images/picture3.jpg')no-repeat; 
+//     background-size: auto; 
+//     display: inline-block; 
+//     background-position: center; 
+//     cursor: pointer; 
+//     border: 0; 
+// }
+// .fightG { 
+//     text-align: center; 
+//     width: 100%;
+//     height: 8%;
+// }
+// .fightG img { 
+//     width: 20%; 
+//     height: 100%; 
+//     display: inline-block; 
+// }
+
+@media (max-width: 768px){
+    .picture1 {
+        margin-top: 30px; 
+        margin-bottom: 30px;
+    }
+    .picture2 {
+        margin-top: 30px; 
+        margin-bottom: 30px;
+    }
+}

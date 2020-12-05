@@ -1,0 +1,178 @@
+#getQuizWrapper{
+    text-align: center;
+}
+.nth_quiz, .situation{/*첫번째 질문 + 상황 div*/
+    width: 100%;
+    height: 50px;
+    background-color: #9400a3;
+    color: #fff;
+    font-size: 20px;
+    padding-top: 11px;
+    font-weight: bold;
+}
+.situation{
+    background-color: #ff62c5;
+}
+
+#quiz {/*ㅇㅇ한다면? 이렇게 써있는 본격적인 질문칸*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+.just_for_underline{/*그냥 라인 치려고 만든 div*/
+    border-bottom: 1px solid #ccc;
+    width: 100%;
+    height: 20px;
+}
+#quiz > div > i {/*퀘스천마크있는 그림*/
+    color: #9f33bf;
+    font-size: 35px;
+}
+
+#quiz > div:nth-child(2) {/*질문지*/
+    padding-left: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #555;
+}
+
+.answer_from {/*ㅇㅇ님의 대답 이부분 */
+    margin-top: 30px;
+    width: 100%;
+    position: relative;
+}
+.img_div{/*프로필사진*/
+    position: absolute;
+    left: 20px;
+    top: -20px;
+}
+// .img_div img {/*프로필사진*/
+//     width: 60px;
+//     height: 60px;
+//     border-radius: 50%;
+//     border: 3px solid #dde8ff;
+//     margin-left: 10px;
+// }
+.answer_from_who {/*ㅇㅇ님의 대답 이부분 글씨*/
+    text-align: left;
+    color: #912adf;
+    font-size: 14px;
+    font-weight: bold;
+    padding-left: 100px;
+}
+.answer_div {/*상대방의 답 div*/
+    margin: 0 auto;
+    width: 90%;
+    height: 80px;
+    background-color: #eee;
+    border-radius: 30px;
+}
+.answer_div > i {
+    font-size: 30px;
+    color: #777;
+    padding-top: 20px;
+}
+
+.my_answer_div > div{/*나의 답 div*/
+    margin: 0 auto;
+    width: 90%;
+    height: 50px;
+    background-color: #eee;
+    margin-bottom: 2px;
+    padding-top: 25px;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: -1px;
+    color: #555;
+}
+
+.my_answer_div > div:nth-child(1){
+    border-radius: 20px 20px 0 0;
+}
+.my_answer_div > div:nth-child(3){
+    border-radius: 0 0 20px 20px;
+}
+#get_quiz_select_btn{
+    width: 300px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background-color: #9400a3;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+// input[type="submit"]:hover{
+//     cursor: pointer;
+// }
+// input[type="radio"]{
+//     visibility:hidden;
+// }
+// label:hover{
+//     cursor: pointer;
+// }
+
+#ans1_label, #ans2_label, #ans3_label {
+    margin-right: 10px;
+}
+
+@media screen and (max-width:768px){
+    *{
+        box-sizing: border-box;
+    }
+    #content{
+        padding: 0;
+    }
+    #contentBox{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+    }
+    .nth_quiz, .situation{/*첫번째 질문 + 상황 div*/
+        height: 7vh;
+        font-size: 1em;
+    }
+    #quiz > div > i {/*퀘스천마크있는 그림*/
+        font-size: 20px;
+    }
+    #quiz div:nth-child(2){/*'길가다 불량배가 위협을 하면 그의 선택은?'*/
+        height: 100%;
+        height: 30px;
+        font-size: 1em;
+    }
+    .answer{
+        margin-top: 40px;
+    }
+    .answer_div{/*상대의 답칸*/
+        height: 10vh;
+    }
+    .answer_div > i {/* '?' */
+        font-size: 1.3em;
+    }
+    .answer_from{ 
+        width: 90%;
+        margin: 0 auto;
+    }
+    .img_div{
+        width: 18%;
+    }
+    .answer_from_who{/*ㅇㅇ님의 대답*/
+        margin-top: 50px;
+        font-size: 12px;
+    }
+    .my_answer_div div{
+        height: 10vh;
+    }
+
+    .my_answer_div div > label{
+        font-size: 0.8em;
+    }
+    input[type="submit"]{
+        width: 100%;
+        height: 50px;
+    }
+}

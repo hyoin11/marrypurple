@@ -1,0 +1,187 @@
+.faqwrap, .faqwrap a, .faqwrap span {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    letter-spacing: 0;
+}
+/*헤더 시작*/
+.logo img{
+    width: 200px;
+    height: auto;
+}
+header {/*로고와 back to main부분*/
+    margin: 0 auto !important;
+    width: 70%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo a {
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    vertical-align: center;
+}
+
+.back_to_main {/*back to main 글자위에 간격주려고.*/
+    margin-top: 10px;
+}
+.back_to_main a {/*back to main 글자 꾸미기.*/
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 13px;
+    color: #845fe9;
+    padding-right: 20px;
+}
+.back_to_main a:hover{/*back to main 글자위에 마우스 올려놓을 때*/
+    text-decoration-line: underline;
+    color: #b095ff;
+}
+/*헤더 끝*/
+
+
+/*무엇을 도와드릴까요 부분 시작*/
+.search {
+    margin-top: 55px;
+    margin-bottom: 120px;
+}
+.search p {/*무엇을 도와드릴까요 글자 수식*/
+    color: black;
+    font-size: 45px;
+    font-family: monospace;
+    font-weight: bold;
+    letter-spacing: -2px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.search i {/*검색창 돋보기부분*/
+    color: #ccc;
+    font-size: 30px;
+    margin-right: 6px;
+}
+
+.search input{
+    border: none;
+    outline: none;
+    font-size: 20px;
+    width: 370px;
+}
+
+.searchBox{/*검색창부분*/
+    margin: 0 auto;
+    width: 420px;
+    height: 40px;
+    border-bottom: 1.5px solid #ccc;
+}
+/*무엇을 도와드릴까요 부분 끝*/
+
+/*FAQ메뉴 선택부분 시작*/
+.menu_section {
+    margin: 0 auto;
+    display: flex;
+    width: 70%;
+    height: 65px;
+    justify-content: space-between;
+}
+
+.menu_section .guide{/*이용자 가이드*/
+    width: 100%;
+    height: 100%;
+    background-color: #a686fb;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.menu_section .solve{/*문제해결*/
+    width: 100%;
+    height: 100%;
+    background-color: #b896f5;
+    text-align: center;
+}
+
+.menu_section .secure{/*안전, 보안, 개인정보*/
+    width: 100%;
+    height: 100%;
+    background-color: #d5b1ec;
+    text-align: center;
+}
+
+.menu_section div p {/*메뉴 위에 간격주려고.*/
+    margin-top: 15px; 
+}
+
+.menu_section div a {/*메뉴 안의 글씨 꾸미기*/
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+}
+/*FAQ메뉴 선택부분 끝*/
+
+/*footer아닌 footer*/
+footer {
+    margin-top: 130px !important;
+    text-align: center;
+}
+
+footer a {
+    text-decoration: none;
+    color: #845fe9;
+    font-size: 18px;
+}
+footer span {
+    color: #845fe9;
+}
+
+.Toggle_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: #845fe9;
+    display: none;
+}
+
+/*모바일 버전 */
+@media (max-width:768px){
+    header{
+        width: 100%;
+        align-items: center;
+    }
+    header .logo{
+        width: 100%;
+        text-align: center;
+    }
+    .back_to_main {/*이건 나중에 js로 =이거눌렀을때 나오도록 할예정임*/
+        display: none;
+    }
+    .Toggle_btn{/*=이모양 버튼*/
+        display: block;
+    }
+    .search {/*검색창*/
+        margin-bottom: 30px;
+    }
+    .search p {/* '무엇을 도와드릴까요?' */
+        font-size: 30px;
+    }
+    .searchBox {/*검색 엔진*/
+        width: 90%;
+        height: 30px;
+    }
+    .searchBox i {
+        font-size: 20px;
+    }
+    .searchBox input{
+        width: 90%;
+        font-size: 15px;
+    }
+    .menu_section {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+    .menu_section div p {
+        height: 40px;
+    }
+}

@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* 공통 */
+// html, body, div, span, applet, object, iframe,
+// h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+// a, abbr, acronym, address, big, cite, code,
+// del, dfn, em, img, ins, kbd, q, s, samp,
+// small, strike, strong, sub, sup, tt, var,
+// b, u, i, center,
+// dl, dt, dd, ol
+// fieldset, form, label, legend,button,
+// table, caption, tbody, tfoot, thead, tr, th, td,
+// article, aside, canvas, details, embed, 
+// figure, figcaption, footer, header, hgroup, 
+// menu, nav, output, ruby, section, summary,
+// time, mark, audio, video { 
+//     margin: 0; padding: 0;
+// }
+ul, ol, li { list-style: none; }
+input[type=button], input[type=submit],input[type=file] { cursor: pointer;}
+#wrap { width: 100%; height:100%;}
+
+/* 회원가입 */
+
+#Rheader {width: 100%; height: 130px; border-bottom: 0.1rem solid goldenrod}
+#container{ margin: 0 auto; width: 100%; }
+.rContainer { width: 100%; }
+.regiT {padding-top: 70px; position: relative; margin: 0 auto; text-align: center;}
+.regiT h1 {font-style: italic; font-size: 2.2rem; font-weight: 800; color: #2c2c2c; margin: 0 auto; margin-bottom: 50px; }
+.regiId,.regiPw, .regiPro { position: relative; margin: 0 auto; text-align: center;}
+.regiId span, .regiPw span { margin-right: 480px;}
+.inputId { width: 422px; height: 57px; display: inline-block; position: relative; margin: 0 auto; }
+.inputId input, .inputId button { display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; width: 90%; border: 2px solid #e8e8e8; border-radius: 8px; background-color: #f5f7fa; margin: 0 auto; }
+.flexS {justify-content: flex-start;}
+.inputId button,input::-webkit-input-placeholder:before{
+    display: inline-block; width: 21px; height: 17px; background: url(../img/email.png) no-repeat; content:'';
+}
+.getE { width: 100px; height: 53px; display: inline-block; margin-left: 15px;
+    border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px;}
+.inputId .reNum { margin-top: 20px;}
+.regiPw, .regiPro, .regiGender, .regiGo{margin-top: 30px;}
+.regiPw .inputPw { margin-right: 117px;}
+.regiPw span { margin-left: 30px;}
+.inputG { display: inline-block; width: 200px; height: 53; margin-right: 60px; margin-left: 0px;}
+.inputG p { margin-right: 100px;}
+.getAge {padding-top: 16px; padding-bottom: 16px; padding-left: 60px; padding-right: 50px;  display: inline-block;
+    border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px;  height: 18px; width: 50px; }
+.inputPro { width: 250px; height: 53px; display: inline-block; }
+.inputPro span {margin-right: 138px; }
+.inputPro2 span {margin-right: 160px;}
+.inputPro input {  display: inline-block; position: relative; margin: 0 auto; }
+.inputPro2 { margin-left: 28px;}
+.getP {width: 250px; height: 53px; display: inline-block; margin-left: 15px;
+    border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px; }
+.regiBack { margin-top: 35px; margin-bottom: 20px;}
+.regiBack a {color: #5c5c5c; font-weight: 800; font-size: 1.2rem;}
+.regiBack a:hover { letter-spacing: .1em; font-weight: 600; color: #2c2c2c; text-transform: uppercase; margin-top: 10px; cursor: pointer }
+.regiBack a::selection{ text-shadow: none; }
+.regiGo button { width: 200px; height: 50px; display: inline-block; padding: 0; margin-top: 50px;
+    border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px;}
+.getNick {display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; width: 80%; border: 2px solid #e8e8e8; border-radius: 8px; background-color: #f5f7fa; margin: 0 auto;}
+    
+.radio_area { height: 45px; box-sizing: border-box; padding-top: 12px; }
+.radio_area p { margin-bottom: 10px;}
+.radio_area input[type=radio].css-radio {
+    overflow: hidden; position: absolute; left:-1000px; width:1px; height:1px;
+}
+.radio_area input[type=radio].css-radio + label {
+    display: inline-block; padding-left: 20px !important; margin-right: 20px;
+    background: url(../img/bg_radio.png) no-repeat 0 0; cursor:pointer; vertical-align: middle; font-size: 15;
+}
+.radio_area input[type=radio].css-radio:checked + label{
+    background-position: 0 -50px;
+}
+.picName { padding-bottom: 15px;}
+
+/* 비밀번호 찾기 */
+.findPw { margin-top: 100px;}
+.reBtn { width: 100%; margin: 0 auto; text-align: center;}
+.rePw { width: 100px; height: 53px; display: inline-block;
+    border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px; margin-top: 50px;} 
+.changePw { position: relative; margin: 0 auto; text-align: center;}
+.changePw input{display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; width: 420px; border: 2px solid #e8e8e8; border-radius: 8px; background-color: #f5f7fa; margin: 0 auto}
+.reInputPw span { margin-left: 200px;}
+.errorMsg1 {  text-align: center; margin-top: 30px; color: red;}
+@media screen and (max-width: 768px){
+    .regiT { padding-top: 20px;}
+    .inputId { width: 220px; height: 57px; }
+    .getE { width: 90px; height: 53px;  margin-left: 30px;}
+    .regiId span:first-child { margin-right: 280px;}
+    .regiPw span:first-child  { margin-right: 280px;}
+    .inputG {  width: 150px; height: 53px;  margin: 5px;}
+    .getAge { padding-bottom: 16px; padding-left: 30px; padding-right: 30px;  display: inline-block;
+        border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px;  height: 18px; width: 25px; }
+    .inputPro { width: 250px; height: 53px; display: block; margin: 0 auto; margin-bottom: 30px; }
+    .regiGender {margin-top: 0; margin-bottom: 50px;}
+    .inputG p { margin-right: 20px; }
+    .regiGo button { width: 90%; height: 50px; display: inline-block;  margin: 0 auto; margin-top:20px; margin-left: 15px; font-size: 2rem; color: #5c5c5c;
+        border: 2px solid  #e8e8e8; background-color: #f5f7fa; border-radius: 8px;  padding: 0px;}
+    .getNick {display: inline-block; padding-top: 16px; padding-bottom: 16px; padding-left: 20px; padding-right: 20px; width: 210px; border: 2px solid #e8e8e8; border-radius: 8px; background-color: #f5f7fa; margin: 0 auto;}
+    .findPw { margin-top: 160px;}
+    .changePw input{ width: 300px;}
+    .errorMsg1 {  text-align: center; margin-top: 30px; color: red;}
+}
+

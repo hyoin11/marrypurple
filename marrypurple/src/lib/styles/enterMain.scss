@@ -1,0 +1,33 @@
+#contentBox .enterM_1 a { 
+    color: #000; 
+}
+#contentBox .enterM_1 li { 
+    width: 100%; 
+    border-bottom: 1px solid #E8E8E8; 
+    text-align: center; 
+    line-height: 60px; 
+}
+#contentBox .enterM_1 li:hover { 
+    background: none;
+    // border: none;
+    color: #2c2c2c;
+}
+#contentBox .enterM_1 div > li:hover { 
+    border: none;
+    border-bottom: 1px solid #E8E8E8;
+    color: #9E7FFE;
+}
+#contentBox .enterM_1 a:first-child li { 
+    border-top: 1px solid #E8E8E8; 
+}
+#contentBox .enterM_1 a:nth-child(6) li, #contentBox .enterM_1 a:nth-child(7) li { 
+    height: 40px; 
+    line-height: 40px; 
+    display: none; 
+}
+#contentBox .enterM_1 a:active, #contentBox .enterM_1 a:hover { 
+    color: #9E7FFE; 
+}
+#contentBox .enterM_1 a:nth-child(6).on2 li, #contentBox .enterM_1 a:nth-child(7).on2 li { 
+    display: block; 
+}

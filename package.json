@@ -1,0 +1,23 @@
+{
+  "name": "github",
+  "version": "1.0.0",
+  "description": "염병\r 뭔데 뭔데뭔데\r 되냐되냐되냐\r 어쩌라구~~~~",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/purplesheep513/finalProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/purplesheep513/finalProject/issues"
+  },
+  "homepage": "https://github.com/purplesheep513/finalProject#readme"
+}

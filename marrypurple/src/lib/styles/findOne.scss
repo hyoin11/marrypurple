@@ -1,0 +1,29 @@
+#contentBox .findF_1 { margin: 25px; }
+#contentBox .findF_1 #findF_1_icon { width: 100px; height: 100px; background: url('../images/icon/logo2-1.png') no-repeat; background-size: 100%; display: inline-block; margin-right: 20px; }
+#contentBox .findF_1 p { display: inline-block; font-size: 22px; position: relative; top: -17px; }
+
+#contentBox .findF_2 { margin: 15px; padding-top: 10px; text-align: center; }
+#contentBox .findF_3 { margin: 15px; }
+#contentBox .findF_3 button { width: 100%; height: 50px; margin-top: 10px; border: 1px solid #9E7FFE; background: #fff; }
+
+.findF_2 form input{
+    display: none;
+}
+.findF_2 form label{
+    margin: 4px; 
+    padding: 4px 10px; 
+    border: 1px solid #5c5c5c; 
+    color: #5c5c5c; 
+    display: inline-block; 
+    border-radius: 100px; 
+}
+.findF_2 form label:hover{
+    color: #9E7FFE; border-color: #9E7FFE; 
+    cursor: pointer;
+}
+.findF_2 form input[type=checkbox]:checked + label {
+    color: #9e7ffe;
+    border-color: #9E7FFE; 
+    font-weight: bold;
+    font-size: 15px;
+}

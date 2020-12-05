@@ -1,0 +1,236 @@
+// * {
+//     margin: 0;
+//     padding: 0;
+//     box-sizing: border-box;
+// }
+.menu_trace_leftside_m{/*어느경로로 들어왔는지 보여주는 div 모바일버전*/
+    display: none;
+}
+.title_m{/* 'Marry Purple 이용가이드'모바일버전 */
+    display: none;
+}
+/*헤더 시작*/
+
+// .logo img{
+//     width: 200px;
+//     height: auto;
+// }
+// header {
+//     margin: 0 auto;
+//     width: 70%;
+//     height: 80px;
+//     display: flex;
+//     align-items: center;
+//     justify-content: space-between;
+// }
+// .logo a {
+//     text-decoration: none;
+//     color: #000;
+//     font-size: 14px;
+//     vertical-align: center;
+// }
+
+// .back_to_main {
+//     margin-top: 10px;
+// }
+// .back_to_main a {
+//     text-decoration: none;
+//     font-family: Georgia, 'Times New Roman', Times, serif;
+//     font-size: 13px;
+//     color: #845fe9;
+//     padding-right: 20px;
+// }
+// .back_to_main a:hover{
+//     text-decoration-line: underline;
+//     color: #b095ff;
+// }
+/*헤더 끝*/
+
+/*헤더 바로 밑 부분 검색창이랑 이런거 있는거 시작*/
+.underline {/*헤더와 본문 사이에 선 그어주기*/
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+
+.menu_trace {/*어느경로로 들어왔는지 보여주는 div와 검색엔진부분 꾸미기*/
+    margin: 0 auto;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu_trace_leftside a{/*어느경로로 들어왔는지 보여주는 div의 글자 꾸며주기*/
+    text-decoration: none;
+    color: #888;
+    font-size: 20px;
+}
+.menu_trace_leftside a:hover {
+    color: #888;
+}
+.menu_trace_leftside i {/*어느경로로 들어왔는지 보여주는 div의 그림 꾸며주기*/
+    color: #999;
+    font-size: 20px;
+    margin-left: 5.5px;
+    margin-right: 6.5px;
+}
+
+.menu_tract_search {/*오른쪽에 있는 검색창부분*/
+    border: 1px solid #ccc;
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+.menu_tract_search i{/*오른쪽에 있는 검색창부분 돋보기 그림 꾸미기*/
+    font-size: 15px;
+    color: #ccc;
+    margin-right: 6px;
+}
+
+.menu_tract_search input{/*오른쪽에 있는 검색창부분*/
+    border: none;
+    outline: none;
+    width: 170px;
+}
+/*헤더 바로 밑 부분 검색창이랑 이런거 있는거 끝*/
+
+/*컨텐트 시작*/
+.content-next2 {
+    margin: 0 auto;
+    width: 70%;
+    height: auto;
+}
+.content-next2 li:hover {
+    background: none;
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.content-next2 .title {/*내가 들어온 메뉴의 타이틀*/
+    margin-top: 20px;
+    width: 100%;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 27px;
+    font-weight: bold;
+}
+
+.part1, .part2 {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.content_ul {
+    list-style: none;
+    width: 45%;
+}
+
+.content_ul li {
+    border-bottom: 1px solid #ccc;
+    height: auto;
+    margin-top: 10px;
+}
+
+.content_ul li a{
+    text-decoration: none;
+    height: 40px;
+    display: inline-block;
+    color: #333;
+}
+
+.content_ul li a:hover {
+    text-decoration-line: underline;
+}
+
+.content_ul li:first-child {
+    font-size: 22px;
+    font-weight: bold;
+    border-bottom: none;
+    color: #333;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.Toggle_btn{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    font-size: 25px;
+    color: #845fe9;
+    display: none;
+}
+
+/*모바일 버전 */
+
+@media (max-width:768px){
+
+    header{
+        width: 95%;
+        align-items: center;
+    }
+    header .logo{
+        width: 95%;
+        text-align: center;
+    }
+    .menu_trace_leftside{
+        display: none;
+    }
+    .menu_trace_leftside_m{
+        display: block;
+        font-size: 10px;
+    }
+    .menu_trace_leftside_m a{/*어느경로로 들어왔는지 보여주는 div의 글자 꾸며주기*/
+        text-decoration: none;
+        color: #888;
+        font-size: 12px;
+    }
+    .menu_trace_leftside_m i {/*어느경로로 들어왔는지 보여주는 div의 그림 꾸며주기*/
+        color: #999;
+        font-size: 12px;
+    }
+    .back_to_main {/*이건 나중에 js로 =이거눌렀을때 나오도록 할예정임*/
+        display: none;
+    }
+    .Toggle_btn{/*=이모양 버튼*/
+        display: block;
+    }
+    .menu_trace {/*어느경로로 들어왔는지 보여주는 div와 검색엔진부분 꾸미기*/
+        flex-direction: column;
+        width: 90%;
+    }
+    .menu_tract_search {/*오른쪽에 있는 검색창부분*/
+        margin: 10px auto;
+        width: 95%;
+        height: 30px;
+        padding-top: 3px;
+    }
+    .part1, .part2 {
+        width: 100%;
+        flex-direction: column;
+    }
+    .content_ul{
+        width: 95%;
+        font-size: 16px;
+    }
+    .content_ul li a{
+        height: 30px;
+    }
+    .content-next2{
+        width: 90%;
+        text-align: center;
+    }
+    .content-next2 .title{/* 'Marry Purple 이용자 가이드' */
+        display: none;
+    }
+    .content-next2 .title_m{
+        display: block;
+        margin-top: 20px;
+        width: 100%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 25px;
+        font-weight: bold;
+    }
+}

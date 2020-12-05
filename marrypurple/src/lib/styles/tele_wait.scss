@@ -1,0 +1,32 @@
+#tele_fin_wait_container{
+    width: 100%;
+    height: 100%;
+    background-color: #ffd1fd;
+    text-align: center;
+}
+
+#tele_text_container{
+    display: inline-block;
+    width: 250px;
+    height: 100px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding-top: 30px;
+    margin-top: 80px;
+}
+
+.tele_wait_text{
+    display: inline-block;
+    color: #999;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#lavenderImg{
+    display: block;
+    width: 300px;
+    height: auto;
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+}

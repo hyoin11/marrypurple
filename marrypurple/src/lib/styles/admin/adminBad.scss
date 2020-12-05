@@ -1,0 +1,361 @@
+#main-content {
+    .wrapper {
+        .badBtn {
+            div{
+                width: 100%;
+                height: 40px;
+                margin-bottom: 10px;
+                background: #fff;
+                border: 1px solid #2c2c2c;
+                text-align: center;
+                line-height: 40px;
+            }
+        }
+
+        .admin_report_table {
+            .dataTables_wrapper {
+                & > div:nth-child(1) {
+                    & > div {
+                        margin-bottom: 10px;
+
+                        &:first-child {
+                            display: none !important;
+                        }
+                    }
+                }
+                & > div:nth-child(2) {
+                    margin-bottom: 10px;
+
+                    table {
+                        width: 100%;
+    
+                        thead {
+                            &:last-child {
+                                display: none;
+                            }
+                            th {
+                                border-bottom: 2px solid dimgray;
+                                border-right: 2px solid dimgray;
+                                padding: 5px 0;
+
+                                &:nth-child(1) {
+                                    width: 10%;
+                                }
+                                &:nth-child(2) {
+                                    width: 30%;
+                                }
+                                &:nth-child(3) {
+                                    width: 20%;
+                                }
+                                &:nth-child(4) {
+                                    width: 40%;
+                                    border-right: none;
+                                }
+                            }
+                        }
+    
+                        tbody {
+                            tr {
+                                td {
+                                    text-align: center;
+                                    padding: 5px 0;
+                                    border-bottom: 1px solid dimgray;
+                                    border-right: 1px solid dimgray;
+                                    &:nth-child(4) {
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                & > div:last-child {
+                    position: relative;
+                    margin-bottom: 20px;
+    
+                    div {
+                        display: inline-block;
+    
+                        
+                    }
+    
+                    & > div:last-child {
+                        position: absolute;
+                        right: 0;
+    
+                        li { 
+                            float: left;
+                            margin-right: 10px;
+    
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .admin_bad_table {
+            .dataTables_wrapper {
+                & > div:nth-child(1) {
+                    & > div {
+                        margin-bottom: 10px;
+
+                        &:first-child {
+                            display: none !important;
+                        }
+                    }
+                }
+                & > div:nth-child(2) {
+                    margin-bottom: 10px;
+
+                    table {
+                        width: 100%;
+    
+                        thead {
+                            &:last-child {
+                                display: none;
+                            }
+                            th {
+                                border-bottom: 2px solid dimgray;
+                                border-right: 2px solid dimgray;
+                                padding: 5px 0;
+
+                                &:nth-child(1) {
+                                    width: 20%;
+                                }
+                                &:nth-child(2) {
+                                    width: 30%;
+                                }
+                                &:nth-child(3) {
+                                    width: 50%;
+                                    border-right: none;
+                                }
+                                &:nth-child(4) {
+                                    width: 0;
+                                    display: none;
+                                }
+                            }
+                        }
+    
+                        tbody {
+                            tr {
+                                td {
+                                    text-align: center;
+                                    padding: 5px 0;
+                                    border-bottom: 1px solid dimgray;
+                                    border-right: 1px solid dimgray;
+                                    &:nth-child(3) {
+                                        border-right: none;
+                                    }
+                                    &:nth-child(4) {
+                                        display: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                & > div:last-child {
+                    position: relative;
+    
+                    div {
+                        display: inline-block;
+    
+                        
+                    }
+    
+                    & > div:last-child {
+                        position: absolute;
+                        right: 0;
+    
+                        li { 
+                            float: left;
+                            margin-right: 10px;
+    
+                            &:last-child {
+                                margin-right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .admin_bad_form {
+            div {
+                position: relative;
+                font-size: 16px;
+                margin-bottom: 15px;
+                line-height: 29px;
+
+                input {
+                    position: absolute;
+                    right: 0;
+                    width: 80%;
+                    height: 25px;
+                }
+                select {
+                    position: absolute;
+                    right: 0;
+                    width: 80.5%;
+                    height: 30px;
+                }
+
+                &:last-child {
+                    input {
+                        position: relative;
+                        width: 49.5%;
+                        height: 35px;
+                        background: #fff;
+                        border: 1px solid #2c2c2c;
+
+                        &:last-child {
+                            position: absolute;
+                            
+                        }
+                    }
+                }
+            }
+        }
+
+        .admin_bad_read_form {
+            div {
+                position: relative;
+                font-size: 16px;
+                margin-bottom: 15px;
+                line-height: 29px;
+                height: fit-content;
+
+                span {
+                    position: absolute;
+                    right: 0;
+                    width: 80%;
+                }
+                div {
+                    display: inline-block;
+                    position: absolute;
+                    right: 0;
+                    width: 80%;
+                    margin-bottom: 0;
+
+                    img {
+                        max-width: 400px;
+                        max-height: 400px;
+                        width: 94%;
+                    }
+                }
+                select {
+                    position: absolute;
+                    right: 0;
+                    width: 80.5%;
+                    height: 30px;
+                }
+
+                &:nth-child(3) {
+                    height: 400px;
+                }
+
+                &:last-child {
+                    input {
+                        position: relative;
+                        width: 33%;
+                        height: 35px;
+                        background: #fff;
+                        border: 1px solid #2c2c2c;
+
+                        &:nth-child(2) {
+                            background: #2c2c2c;
+                            color: #fff;
+                        }
+                        &:last-child {
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                }
+            }
+        }
+        
+        h4 {
+            color: #2c2c2c;
+            font-size: 18px;
+            margin: 10px 0;
+        }
+        
+    }
+}
+
+@media (max-width:768px){
+    #main-content {
+        .wrapper {
+            .admin_bad_form {
+                div {
+                    input {
+                        position: absolute;
+                        right: 0;
+                        width: 65%;
+                    }
+                    select {
+                        position: absolute;
+                        right: 0;
+                        width: 65.5%;
+                    }
+                }
+            }
+
+            .admin_bad_read_form {
+                div {
+                    span {
+                        width: 60%;
+                    }
+                    div {
+                        display: block;
+                        position: relative;
+                        right: 0;
+                        width: 100%;
+                        
+                        img {
+                            max-width: 400px;
+                            max-height: 400px;
+                            width: 100%;
+                            height: 92vw;
+                        }
+                    }
+                    
+                    &:first-child {
+                        span {
+                            font-size: 0.84rem;
+                        }
+                    }
+                    &:nth-child(3) {
+                        height: 100vw;
+                        max-height: 430px;
+                    }
+                    &:last-child {
+                        input {
+                            position: relative;
+                            width: 100%;
+                            height: 35px;
+                            background: #fff;
+                            border: 1px solid #2c2c2c;
+                            margin-bottom: 5px;
+    
+                            &:nth-child(2) {
+                                background: #2c2c2c;
+                                color: #fff;
+                            }
+                            &:last-child {
+                                position: relative;
+                                right: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

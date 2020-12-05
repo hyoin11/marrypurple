@@ -1,0 +1,105 @@
+.gramB_1 { 
+    margin: 15px; 
+    padding-bottom: 10px; 
+    border-bottom: 1px solid #e8e8e8; 
+}
+
+.gramB_2 { 
+    margin: 15px 25px; 
+}
+.gramB_2 dt, .gramB_2 dd { 
+    margin-bottom: 10px; 
+    border-bottom: 1px solid gray; 
+}
+.gramB_2 a { 
+    color: #2C2C2C; 
+    position: relative; 
+    width: 100%; 
+}
+.gramB_2 a:hover { 
+    color: #2C2C2C; 
+}
+.gramB_2 .gramB_2_wrap { 
+    position: relative; 
+    margin-bottom: 10px; 
+}
+.gramB_2 p { 
+    display: inline-block; 
+    font-size: 18px; 
+}
+.gramB_2 .gramB_2_id { 
+    font-weight: bold; 
+}
+.gramB_2 .gramB_2_icon { 
+    width: 25px; 
+    height: 25px; 
+    background: url('../images/icon/add.png') no-repeat; 
+    background-size: 100%; 
+    position: absolute; 
+    bottom: -1px; 
+    right: 0; 
+}
+.gramB_2 .gramB_2_detail { 
+    margin: 15px; 
+    text-align: center; 
+}
+.gramB_2 .gramB_2_detail .gramB_2_datail_photo { 
+    width: 300px; 
+    height: 300px; 
+    // background: url('../images/images/12344.jpg') no-repeat; 
+    background-size: 100%; 
+    margin: 0 auto 10px;
+    overflow: hidden;
+}
+.gramB_2 .gramB_2_detail .gramB_2_datail_photo img {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+    filter: blur(6px)
+}
+// .gramB_2 .gramB_2_detail .gramB_2_datail_photo img::before {
+//     position: fixed; 
+//     top: 0; 
+//     left: 0; 
+//     right: 0; 
+//     bottom: 0; 
+//     // background-image: url(bg.jpg); 
+//     -webkit-filter: blur(5px); 
+//     -moz-filter: blur(5px); 
+//     -o-filter: blur(5px); 
+//     -ms-filter: blur(5px); 
+//     filter: blur(5px); 
+//     z-index: -1; 
+//     content: "";
+
+// }
+.gramB_2 .gramB_2_detail .gramB_2_detail_content { 
+    font-size: 16px; 
+}
+.gramB_2 dd { 
+    display: none; 
+}
+.gramB_2 dd.on { 
+    display: block; 
+}
+.gramB_2 dt.on .gramB_2_icon { 
+    background: url('../images/icon/minus.png') no-repeat; 
+    background-size: 100%; 
+}
+
+@media (max-width:768px){
+    /* board_bad */
+    #contentBox .gramB_2 p { 
+        font-size: 1.1em; 
+    }
+    #contentBox .gramB_2 .gramB_2_detail .gramB_2_datail_photo { 
+        max-width: 300px; 
+        width: 100%; 
+        height: 69vw; 
+        max-height: 300px; 
+    }
+    #contentBox .gramB_2 .gramB_2_detail .gramB_2_detail_content { 
+        font-size: 1em; 
+        word-break: keep-all; 
+    }
+}

@@ -1,0 +1,104 @@
+#yours_is {text-align: center; color:#999; font-size: 20px; font-weight: 900; padding: 20px 0; border-bottom: 1px solid #ccc;}
+#found_profile_pic { width: 420px; height: auto;}
+#found_profile_pic img { width: 100%; height: auto;}
+#detail_container{padding: 0 20px;}
+#found_user_nick { font-size: 32px; font-weight: bold;}
+#found_user_nick span { font-size: 24px; font-weight: normal;}
+#placeIco_find { 
+    margin-left: 20px;
+    width: 25px; 
+    height: 25px; 
+    background: url('../images/icon/place-localizer.png') no-repeat; 
+    background-size: 25px;
+    background-position: 0px; 
+    display: inline-block; 
+    font-weight: normal; 
+    font-size: 18px; 
+    position: relative;
+    top: 7px;
+}
+#found_address {
+    display: inline-block; 
+    position: relative; 
+    top: -3px;
+    font-weight: normal;
+    font-size: 18px;
+}
+.found_personality {padding: 3px 5px; border: 1px solid #5C5C5C; border-radius: 20px; display: inline-block;}
+.common_div { margin: 5px 0;}
+
+#flex_div{
+    display: flex;
+    padding: 0 10px;
+}
+#flex_div a {
+    display: inline-block;
+    width: 200px;
+    height: 75px;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+#flex_div a:first-child{
+    border-radius: 20px 0 0 20px ;
+}
+#flex_div a:nth-child(2){
+    border-radius: 0 20px 20px 0 ;
+
+}
+#like_you {
+    display: inline-block; 
+    width: 55px;
+    height: 55px;
+    background: url('../images/icon/heart2.png') no-repeat;
+    background-size: 55px;
+}
+#flex_div a div:nth-child(2) {
+    font-size: 12px;
+    color: #bbb;
+    font-weight: bold;
+}
+#pass_you{
+    display: inline-block; 
+    width: 55px;
+    height: 55px;
+    color: rgb(0, 136, 34);
+}
+#next_time{
+    width: 55px;
+    height: 55px;
+    color: rgb(0, 136, 34);
+}
+#flex_div_next{
+    margin: 0 auto;
+    width: 80%;
+    margin-top: 30px;
+}
+#flex_div_next a{
+    display: inline-block;
+    width: 100%;
+    border-radius: 20px;
+    text-align: center;
+    border: 1px solid #ccc;
+    background-color: #eee;
+}
+
+@media (max-width:768px){
+    .common_div {
+        margin: 5px auto;
+    }
+
+    .labelClass {
+        top: 30%;
+    }
+
+    #flex_div a {
+        width: 48%;
+        box-sizing: content-box;
+    }
+
+    #flex_div{
+        box-sizing: content-box;
+    }
+}

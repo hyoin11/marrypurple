@@ -1,0 +1,39 @@
+#content { 
+    width: 100%; 
+    background: #f5f7fa; 
+    border-left: 1px solid #E8E8E8; 
+}
+#contentBox { 
+    width: 420px; 
+    height: 700px; 
+    background: #fff; 
+    margin: 0 auto; 
+    margin-top: 110px; 
+    align-items: center; 
+    border-radius: 8px; 
+    box-shadow: 0 2px 10px 0 rgba(136, 136, 136, 0.77); 
+    overflow-y: scroll; 
+    -ms-overflow-style: none; position: relative; 
+}
+#contentBox::-webkit-scrollbar { 
+    display: none; 
+}
+
+// 모바일버전
+@media (max-width:768px){
+    #content {
+        padding-top: 0 !important;
+    }
+    #contentBox { 
+        width: 100%;
+        height: fit-content;
+        border-radius: 0;
+        box-shadow: none;
+        margin-top: 0;
+    }
+    a { 
+        text-decoration: none; 
+        cursor: pointer; 
+        color: #2c2c2c; 
+    }
+}

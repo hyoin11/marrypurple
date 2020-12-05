@@ -1,0 +1,15 @@
+#admin_user_table{
+    width: 100%;
+    text-align: center;
+}
+#admin_user_table tr th {
+    border-bottom: 2px solid dimgray;
+    border-right: 2px solid dimgray;
+    padding: 5px 0;
+}
+#admin_user_table tr td {
+    text-align: center;
+    padding: 5px 0;
+    border-bottom: 1px solid dimgray;
+    border-right: 1px solid dimgray;
+}

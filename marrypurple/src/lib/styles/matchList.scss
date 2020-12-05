@@ -1,0 +1,124 @@
+@media (max-width:768px){
+    /* match_list */
+    #content .matchList_1, #content .matchList_2 {
+        text-align: left;
+    }
+    #content .matchList_1 .matchList_1_title { 
+        margin: 12px 8px; 
+    }
+    #content .matchList_1 .matchList_1_title h2 { 
+        display: inline-block; 
+        color: #9E7FFE; 
+        font-size: 1.1em; 
+    }
+    #content .matchList_1 .matchList_1_title .matchList_count { 
+        width: 20px; 
+        line-height: 20px; 
+        height: 20px; 
+        font-size: 1rem; 
+        display: inline-block; 
+        color: #fff; 
+        background: #9E7FFE; 
+        border-radius: 20px; 
+        text-align: center; 
+        margin-left: 4px; 
+    }
+    #content .matchList_1 .matchList_1_content #matchList_1_list { 
+        width: 100vw; 
+        white-space: nowrap; 
+        padding: 4px 8px; 
+        overflow-x: scroll; 
+    }
+    #content .matchList_1 .matchList_1_content #matchList_1_list a { 
+        text-align: center; 
+        position: relative; 
+        margin: 0 4px; 
+        display: inline-block; 
+        color: #2c2c2c; 
+        font-weight: bold; 
+    }
+    #matchList_1_list a div { 
+        width: 74px; 
+        height: 74px; 
+        border-radius: 50%; 
+        background: url('../images/images/C2005270925279578r.jpeg') no-repeat; 
+        background-size: 100%; 
+    }
+    #matchList_1_list a:first-child div { 
+        background: none; 
+        border: 5px solid gold; 
+        box-sizing: border-box; 
+    }
+
+    #content .matchList_2 .matchList_2_title { 
+        margin: 12px 8px; 
+    }
+    #content .matchList_2 .matchList_2_title h2 { 
+        display: inline-block; 
+        color: #9E7FFE; 
+        font-size: 1.1em; 
+    }
+    #content .matchList_2 .matchList_2_title .matchList_count { 
+        width: 20px; 
+        line-height: 20px; 
+        height: 20px; 
+        font-size: 1rem; 
+        display: inline-block; 
+        color: #fff; 
+        background: #9E7FFE; 
+        border-radius: 20px; 
+        text-align: center; 
+        margin-left: 4px; 
+    }
+
+    .matchList_2_content {
+        .likeMeLink {
+            div {
+                width: 100%;
+                height: 85px;
+                border: 5px solid gold;
+                font-weight: 900;
+                line-height: 85px;
+                padding-left: 15px;
+            }
+        }
+    }
+
+    #content .matchList_2 .matchList_2_content a { 
+        position: relative; 
+        align-items: center; 
+        display: flex; 
+        color: #2c2c2c; 
+        border-bottom: 1px solid #e8e8e8; 
+        box-sizing: inherit; 
+    }
+    #content .matchList_2 .matchList_2_content a .matchList_2_listP_wrap { 
+        padding: 12px 8px; 
+        display: inline-block; 
+        border-bottom: 1px solid #fff; 
+        flex-grow: 0; 
+        box-sizing: inherit; 
+    }
+    #content .matchList_2 .matchList_2_content a .matchList_2_listP_wrap .matchList_2_listP_photo { 
+        width: 74px; 
+        height: 74px; 
+        position: relative; 
+        border-radius: 50%; 
+        background: url('../images/images/C2005270925279578r.jpeg') no-repeat; 
+        background-size: 100%; 
+    }
+    #content .matchList_2 .matchList_2_content a li .matchList_2_listP_idwrap { 
+        padding-right: 10px; 
+        overflow: hidden; 
+        flex-direction: column; 
+        flex: 1; 
+        display: inline-block; 
+        box-sizing: inherit; 
+        position: absolute; 
+        top: 35px; 
+    }
+    #content .matchList_2 .matchList_2_content a li .matchList_2_listP_idwrap .matchList_2_listP_id { 
+        font-weight: bold; 
+        font-size: 1.2em; 
+    }
+}

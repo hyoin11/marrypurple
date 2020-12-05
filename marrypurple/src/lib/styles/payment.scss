@@ -1,0 +1,237 @@
+#contentBox1{
+    display: flex;
+    justify-content: space-between;
+}
+.product_list {/*좋아요 무제한, 이상형찾기 등 페이지보여주는 div */
+    flex: 1;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+.go_pay{/*결제창*/
+    height: 100%;
+    flex-basis: 40%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    min-width: 364px;
+}
+
+#service{/*유로 서비스 포함 내역*/
+    color: #777;
+    letter-spacing: -2px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: bold;
+}
+.product_list_detail {/*좋아요 무제한, 이상형찾기 등(상품들) 페이지보여주는 div 디테일 */
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    height: 150px;
+    border-bottom: 1px solid #ccc;
+}
+
+/*아이콘들(그림)*/
+.icons {
+    width: 100px;
+    margin-left: 12px;
+}
+
+#icon1 i {
+    color: #845fe9;
+    font-size: 50px;
+}
+#icon1_text {
+    color: #845fe9;
+}
+
+#icon2 i {
+    color: #e7386c;
+    font-size: 50px;
+}
+#icon2_text{
+    color: #e7386c;
+}
+
+#icon3 i {
+    color: #a58ceb;
+    font-size: 50px;
+}
+#icon3_text{
+    color: #a58ceb;
+}
+
+#icon4 i {
+    color: #5dbd85;
+    font-size: 50px;
+}
+#icon4_text{
+    color: #5dbd85;
+}
+
+#icon5 i {
+    color: #4787e7;
+    font-size: 50px;
+}
+#icon5_text{
+    color: #4787e7;
+}
+/*아이콘들(그림)*/
+
+.producnt_text p:first-child{/*상품 설명*/
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.producnt_text p:nth-child(2) {
+    font-size: 12px;
+    color: #555;
+}
+
+#go_pay_title_detail {/*'나를 좋아한 사람 보기!'*/
+    text-align: center;
+    font-size: 12px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+#go_pay_title{/*'Marry Purple 골드 구매'*/
+    color: #ffc400;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+
+/*몇개월치 구매할지 선택하는 div*/
+.choose{
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 90%;
+    height: 65px;
+    text-align: center;
+}
+.choose > p {
+    text-align: center;
+    font-size: 14px;
+    color: #ddd;
+}
+.choose label{
+    font-size: 24px;
+    color: #ddd;
+    font-weight: bold;
+}
+.choose input {
+    width: 50px;
+}
+/*몇개월치 구매할지 선택하는 div*/
+
+.buttons{
+    width: 100%;
+    height: 40px;
+}
+.go_pay form .buttons {
+    margin-top: 10px;
+}
+
+.buttons input{
+    width: 100%;
+    height: 100%;
+    border: none;
+    background-color: #fff;
+    border-radius: 20px;
+    outline: none;
+}
+.buttons input:hover{
+    cursor: pointer;
+}
+#pay_button input{
+    background-color: #ffc400;
+    color: #fff;
+}
+
+
+
+.go_pay form input[type=radio] {
+    display: none;
+}
+.go_pay form .inputCircle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: #ddd;
+    display: inline-block;
+    // border: 3px solid #ffc400;
+    box-sizing: border-box;
+}
+.test_css .inputCircle {
+    border: 3px solid #ffc400;
+}
+
+
+
+/*선택을 눌렀을때만 아래 효과가 나오기 때문에 일단 테스트용으로 넣었습니다*/
+.test_css {
+    border: 2px solid #ffc400;
+    border-radius: 10px;
+}
+.test_css label{
+    color: #ffc400;
+}
+.test_css p {
+    color: #ffc400;
+}
+
+@media screen and (max-width:768px){
+    #contentBox1{
+        flex-direction: column;
+        width: 100%;
+    }
+    .go_pay{
+        margin: 0 auto;
+        width: 90%;
+    }
+    #go_pay_title{
+        font-size: 1.5em;
+        margin: 0;
+    }
+    #go_pay_title_detail{
+        margin-top: 0;
+        padding-top: 10px;
+        font-size: 1em;
+        margin-bottom: 0px;
+    }
+    .choose > label{
+        font-size: 1.3em;
+    }
+    .buttons{
+        height: 60px;
+    }
+    #pay_button input{
+        border-radius: 20px;
+    }
+    #pay_button {
+        margin-top: 2%;
+        margin-bottom: 2px;
+    }
+    #service{/*유로 서비스 포함 내역*/
+        margin-top: 20px;
+        padding-bottom: 20px;
+    }
+    .producnt_text > p:first-child{
+        font-size: 1em;
+    }
+    .producnt_text > p:nth-child(2){
+        font-size: 0.8em;
+    }
+
+    .product_list_detail{
+        height: 15%;
+        margin: 0 auto;
+        padding: 20px 0;
+        margin-bottom: 3%;
+    }
+    .choose{
+        height: 75px;
+    }
+}

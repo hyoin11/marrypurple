@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MarryPurple | 메시지</title>
+    <script src="https://kit.fontawesome.com/f4b52f1d75.js" crossorigin="anonymous"></script>
+    <link href="./css/style.css" rel="stylesheet">
+</head>
+<body>
+    <div id="wrap">
+        <!-- 모바일 메뉴 -->
+        <div id="m_menu">
+            <ul>
+                <li><a href="Profile.html"><div><i class="fas fa-address-card"></i></div></a></li>
+                <li><a href="match.html"><div><i class="fas fa-heartbeat"></i></div></a></li>
+                <li><a href="match_list.html"><div><i class="fas fa-comments"></i></div></a></li>
+                <li><a href="enter_main.html"><div><i class="fas fa-plane"></i></div></a></li>
+            </ul>
+        </div>
+        <!-- 웹 메뉴 -->
+        <div id="left_menu">
+            <ul>
+                <li>
+                    <ul id="myprofile">
+                        <a href="./Profile.html"><li><div id="myPho"><div></div></div><span>나의 프로필</span></li></a>
+                        <a href="work.html"><li></li></a>
+                    </ul>
+                </li>
+                <li>
+                    <ul id="sub_menu">
+                        <a id="m1"><li>매치</li></a>
+                        <a id="m2" class="on"><li>메시지</li></a>
+                        <a id="m3"><li>엔터테인먼트</li></a>
+                    </ul>
+                </li>
+                <li>
+                    <div id="slide_box">
+                        <div id="sub_menu_match" class="off">
+                            <ul>
+                                <a href="match_like.html"><div><li>나를 좋아요</li></div></a>
+                                <a href="message.html"><div><li>123</li></div></a>
+                                <a href="message.html"><div><li>야야야</li></div></a>
+                            </ul>
+                        </div>
+                        <div id="sub_menu_message" class="on">
+                            <ul id="message_list">
+                                <a href="message.html"><li class="message_listP">
+                                    <div class="message_listP_wrap"><div class="message_listP_photo"><div></div></div>
+                                    <div><span class="message_listP_id">냐옹</span></div></div>
+                                </li></a>
+                                <a href="message.html"><li class="message_listP">
+                                    <div class="message_listP_wrap"><div class="message_listP_photo"><div></div></div>
+                                    <div><span class="message_listP_id">냐옹</span></div></div>
+                                </li></a>
+                                <a href="message.html"><li class="message_listP">
+                                    <div class="message_listP_wrap"><div class="message_listP_photo"><div></div></div>
+                                    <div><span class="message_listP_id">냐옹</span></div></div>
+                                </li></a>
+                            </ul>
+                        </div>
+                        <div id="sub_menu_enter" class="off">
+                            <ul>
+                                <a href="worldcup1.html"><div><li>이상형 월드컵</li></div></a>
+                                <a href="Telepathy.html"><div><li>텔레파시</li></div></a>
+                                <a href="find_main.html"><div><li>이상형 찾기</li></div></a>
+                                <a href="gram_main.html"><div><li>메리퍼플그램</li></div></a>
+                                <a href="#"><div><li>공지사항</li></div></a>
+                                <a href="board_bad.html"><div><li>불량회원</li></div></a>
+                                <a href="FAQ.html"><div><li>FAQ</li></div></a>
+                            </ul>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="contentBox">
+                <div class="message_1">
+                    <a href="message_profile.html"><div id="message_1_photo"><div></div></div>
+                    <p><span id="message_1_id">냐냐냐냐오오오오옹</span>님과 <span id="message_1_date">2020.9.8</span>에 매치되었습니다.</p></a>
+                </div>
+                <div class="message_2" id="msgBoard">
+                    <p>2020.10.07</p>
+                    <div class="message_2_you"><div class="message_2_you_photo"></div><div class="message_2_you_text">
+                    </div></div>
+                    
+                </div>
+                <div class="message_3">
+                    <div id="message_3_emoji"><div></div></div> 
+                    <form><input id="sendMsgBox"  autocomplete='off' /> <button onclick="sendMsg()">보내기</button></form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script src = "http://code.jquery.com/jquery-1.7.1.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script>
+    //socket.emit('text','안녕하세요')  //text라는 인자로 메세지를 내보냄.
+    $(() => {
+        var socket = io.connect(); //웹소켓 연결
+        // 메세지를 화면에 보이기
+        socket.on('message',function(data){
+            var output = '';
+            output = `</br><div class="message_2_me"><div class="message_2_me_text">${data.message}</div></div></br>`;
+            $('#msgBoard').append(output);
+        });
+
+        // DB에 있었던 메세지 불러오기
+        socket.on('preload',function(data){
+            var output = '';
+            output = `</br><div class="message_2_me"><div class="message_2_me_text">${data.message}</div></div></br>`;
+            $('#msgBoard').append(output);
+        });
+
+        // 메세지 보내기
+        $('form').submit(() => {
+            socket.emit('message',
+            {
+                room: '임시 방',
+                name: '임시 닉네임',
+                message:$('#sendMsgBox').val()
+            }
+            );
+            $('#sendMsgBox').val('');
+            return false;
+        });
+    });
+</script>

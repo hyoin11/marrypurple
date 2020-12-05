@@ -1,0 +1,197 @@
+.guideline {/*< 텔레파시 통통통*/
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: #9e7ffe;
+    box-sizing: border-box;
+}
+
+.choose_mun { /*문제고르기와 상황 박스*/
+    width: 100%;
+    height: 40px;
+    background-color: #9400a3;
+    color: #fff;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding-top: 8px;
+    box-sizing: border-box;
+}
+/*문제 고르는 현황*/
+#part1{ 
+    margin-bottom: 10px;
+}
+.part1_fc{/*3가지 질문을 선택하고 답해주세요*/
+    padding: 5px 0;
+    text-align: center;
+    color: #333;
+    font-size: 12px;
+}
+
+.process {/*번호(num1,2,3)에 flex주기위해 감싸준 컨테이너*/
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.num1, .num2, .num3 {/*문제번호*/
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: #9813ae;
+    color: #fff;
+    font-size: 23px;
+    font-weight: bold;
+    text-align: center;
+    border: 4px solid transparent;
+    box-sizing: border-box;
+}
+
+.mun {/*문제*/
+    width: 100%;
+    height: 50px;
+    border-bottom: 1px solid #ccc;
+    padding-left: 30px;
+    padding-top: 10px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.mun > a > span {
+    color: #9f33bf;
+    font-size: 24px;
+    font-weight: bold;
+    padding-right: 30px;
+}
+
+.mun > a {
+    text-decoration: none;
+    color: #777;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.answer{
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+}
+
+.choose_ans {
+    width: 100%;
+    height: 35px;
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+    background-color: #f7f7f7;
+}
+
+input[type=radio]{
+    display: none;
+}
+label:hover{
+    cursor: pointer;
+}
+.choose_ans input[type=radio]:checked + label{
+    color: #9e7ffe;
+    font-weight: bold;
+}
+#part2{
+    margin: 0 auto;
+}
+#telepahtyGoGo{
+    display: inline-block;
+    background-color: #9813ae;
+    width: 200px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 20px;
+    padding-top: 10px;
+    margin: 10px auto;
+    text-align: center;
+}
+#telepahtyGoGo:hover{
+    cursor: pointer;
+}
+
+.telepahtyGoGoContainer{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    #content{
+        height: 100%;
+        padding: 0;
+    }
+    .guideline{
+        display: none;
+    }
+    #contentBox{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .choose_mun{/*문제고르기와 상황 박스*/
+        height: 60px;
+        padding-top: 18px;
+        font-size: 22px;
+    }
+    .part1_fc{/*3가지 질문을 선택하고 답해주세요*/
+        font-size: 16px;
+        height: 30px;
+        padding-top: 10px;
+    }
+
+    .num1, .num2, .num3 {/*문제 번호*/
+        width: 60px;
+        height: 60px;
+        padding-top: 8px;
+    }
+    .choose_mun{
+        margin-top: 20px;
+    }
+    .mun {/*문제*/
+        min-height: 70px;
+        height: auto;
+        padding: 15px;
+    }
+    .mun a span {/* 'Q' */
+        font-size: 30px;
+        padding-left: 15px;
+    }
+    .mun > a { /* 질문 */
+        text-decoration: none;
+        color: #777;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .choose_ans {/* 답변 */
+        height: 50px;
+        font-size: 16px;
+        padding-top: 10px;
+        box-sizing: border-box;
+    }
+    #telepahtyGoGo{
+        width: 100%;
+        height: 70px;
+        margin: 0;
+        font-size: 22px;
+        padding: 0;
+    }
+}
+
+#selectAll{
+    margin: 22px 0;
+    color: #777;
+    font-weight: bold;
+    font-size: 20px;
+}

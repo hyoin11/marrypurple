@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* 공통 */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol
+fieldset, form, label, legend,button,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video { 
+    margin: 0; padding: 0;
+}
+input[type=button], input[type=submit] { cursor: pointer;}
+#wrap3 { width: 100%; height:100%;}
+ul, ol, li { list-style: none; }
+
+/* 로그인 */
+#loginWrap { margin:0 auto; width: 700px; height: 700px; text-align: center; }
+#Lcontainer { margin: 0 auto; text-align: center; padding: 0px 36px 36px 44px; display: inline-block;}
+#Lheader { width: 100%; height: 40%; margin-top: 100px;}
+.Llogo, .Lexit { display: inline-block;}
+.Llogo { margin-left: 30px; margin-bottom: 40px;}
+#Lheader .Llogo img{ width: 150px; height: 150px; display: inline-block;}
+.Lexit { float: right; margin-top: 20px;}
+.HeadT { margin-bottom: 40px; font-style: italic; font-size: 400 13.3333px;  font-weight: 800; color: #2c2c2c; }
+.loginContent { margin-bottom: 30px;}
+#loginWrap .Lexit button {border: 0; background-color: white;}
+#loginWrap .Lexit button ,#loginWrap .Lexit img{ width: 48px; height: 48px; }
+.snsLogin { border: 2px solid #5c5c5c; border-radius: 16px; width: 100%; height: 40px; margin-bottom: 20px;}
+#snsLogo { margin-left: 20px; width: 35px; height: 35px; border-radius: 50%; border: 2px solid #fff; display: inline-block; margin-right: 8px; float: left;}
+#snsLogo #google{ width: 100%; height: 100%; background: url('../img/google.jpg') no-repeat; background-size: 100%; display: inline-block; border-radius: 50%; }
+#snsLogo #kakao{ width: 100%; height: 100%; background: url('../img/kakao.png') no-repeat; background-size: 100%; display: inline-block; border-radius: 50%; }
+#snsLogo #facebook{ width: 100%; height: 100%; background: url('../img/facebook.png') no-repeat; background-size: 100%; display: inline-block; border-radius: 50%; }
+#snsLogo #marry{ width: 100%; height: 100%; background: url('../img/loginLogo.PNG') no-repeat; background-size: 100%; display: inline-block; border-radius: 50%; }
+#Lcontainer a,.loginQ a  { font-weight: 600; color: #5c5c5c; text-transform: uppercase; margin-top: 10px; cursor: pointer;  }
+.loginFont {vertical-align: -8px;}
+#Lcontainer a:hover, .loginQ a:hover{ letter-spacing: .1em; font-weight: 600; color: #2c2c2c; text-transform: uppercase; margin-top: 10px; cursor: pointer;}
+button { cursor: pointer;}
+.noRegi{ margin-top: 50px;}
+
+
+@media screen and (max-width: 768px){
+    #loginWrap { border: none;  margin:0 auto; width: 440px; height: 700px; text-align: center;}
+    .Lexit { display: none;}
+    .Llogo { margin-top: 100px; }
+    #Lheader .Llogo img{ width: 120px; height: 120px; display: inline-block;}
+    #wrap3{width: 100%; height: 100%;
+
+    }
+}

@@ -1,0 +1,160 @@
+
+.guideline {/*< 텔레파시 통통통*/
+    width: 100%;
+    height: 50px;
+    padding-top: 15px;
+    color: #fff;
+    text-align: left;
+    padding-left: 20px;
+    font-size: 20px;
+    background-color: #9e7ffe;
+    box-sizing: border-box;
+    border-radius: 8px 8px 0 0;
+}
+
+.collect_quiz{/*퀴즈모음 컨테이너*/
+    width: 100%;
+    height: 650px;
+    background-color: #b498f6;
+    box-sizing: border-box;
+    padding-top: 5px;
+    border-radius: 0 0 8px 8px;
+}
+.collect_quiz > img {/*와이파이모양 그림*/
+    width: 380px;
+    height: auto;
+    padding-bottom: 10px;
+}
+.quiz_name{/*질문*/
+    margin: 0 auto;
+    width: 350px;
+    height: 60px;
+    padding-top: 20px;
+    background-color: #cfbaff;
+    border-radius: 30px 30px 0 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fde9ff;
+    box-sizing: border-box;
+}
+.quiz_ans{/*답변*/
+    margin: 0 auto;
+    width: 350px;
+    height: 60px;
+    padding-top: 15px;
+    background-color: #cfbaff;
+    border-radius: 0 0 30px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 3px;
+    margin-bottom: 30px;
+    box-sizing: border-box;
+}
+#quiz_ans1, #quiz_ans2, #quiz_ans3 {
+    position: relative;
+}
+#mun1, #mun2, #mun3 {/* 'n번째 문제' */
+    position: absolute;
+    top: -20px;
+    left: 100px;
+    width: 150px;
+    height: 30px;
+    background-color: #fd009f;
+    border-radius: 15px;
+    padding-top: 5px;
+    color: #fff;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+.continue_explain {/* '이대로 진행하려면 시작버튼을 눌러주세요' */
+    font-size: 14px;
+    color: #ffdbf2;
+    margin-bottom: 10px;
+}
+#start_tele {
+    display: inline-block;
+    width: 300px;
+    height: 40px;
+    background-color: #fd009f;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+#start_tele:hover{
+    cursor: pointer;
+}
+.collect_quiz div:nth-child(7){
+    margin-bottom: 20px;
+}
+
+#tele_fin_container{
+    text-align: center;
+}
+
+@media screen and (max-width:768px){
+    #content{
+        height: 100vh;
+        padding: 0;
+        background-color: #b498f6;
+    }
+    #contentBox{
+        width: 100%;
+        height: 100%;
+        background-color: #fff;
+        box-shadow: none;
+        border-radius: 0;
+        box-sizing: border-box;
+    }
+    .collect_quiz{
+        border-radius: 0;
+        height: 100%;
+        margin-top: 30px;
+    }
+    .guideline{/*텔레파시 통통통 써있는 부분*/
+        display: none;
+    }
+    .quiz_name, .quiz_ans{/*질문*/
+        width: 90%;
+        height: 50px;
+        padding-top: 20px;
+        font-size: 0.9rem;
+}
+    .quiz_ans{/*답변*/
+        margin-bottom: 30px;
+    }
+
+    .collect_quiz > img {/*와이파이모양 그림*/
+        width: 60%;
+        height: auto;
+        padding-bottom: 10px;
+    }
+    #mun1, #mun2, #mun3 {/* 'n번째 문제' */
+        position: absolute;
+        top: -15px;
+        left: 30%;
+        width: 40%;
+        height: 30px;
+        background-color: #fd009f;
+        border-radius: 20px;
+        padding-top: 5px;
+        color: #fff;
+        font-size: 0.8em;
+        box-sizing: border-box;
+    }
+    .continue_explain {/* '이대로 진행하려면 시작버튼을 눌러주세요' */
+        font-size: 16px;
+        color: #ffdbf2;
+        padding: 15px;
+    }
+    .start_btn > button {
+        width: 100%;
+        height: 50px;
+        background-color: #fd009f;
+        color: #fff;
+        font-size: 22px;
+        font-weight: bold;
+    }
+}

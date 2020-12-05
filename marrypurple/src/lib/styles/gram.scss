@@ -1,0 +1,525 @@
+/* gram_main */
+#contentBox .gram_1 { 
+    margin: 15px; 
+}
+#contentBox .gram_1 a { 
+    width: 100%; 
+}
+#contentBox .gram_1 .gram_1_button { 
+    width: 100%; 
+    height: 50px; 
+    border: 1px solid #9e7ffe; 
+    color: #000; 
+    text-align: center; 
+    line-height: 50px; 
+}
+
+#contentBox .gram_2 { 
+    margin: 0 15px; 
+}
+#contentBox .gram_2 p { 
+    margin-bottom: 5px; 
+    font-size: 32px; 
+    font-weight: bold; 
+    color: #9e7ffe;
+    text-align: left;
+}
+#contentBox .gram_2 .gram_2_photo { 
+    width: 190px; 
+    height: 190px; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    float: left; 
+    // background: url('../images/images/C2005270925279578r.jpeg') no-repeat;
+    // background-size: 100%; 
+}
+#contentBox .gram_2 .gram_2_photo img {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+}
+#contentBox .gram_2 a:nth-child(odd) .gram_2_photo { 
+    margin-right: 0; 
+}
+
+#contentBox .gram_3 { 
+    clear: both; 
+    margin: 0 15px; 
+}
+#contentBox .gram_3 p { 
+    margin-bottom: 5px; 
+    font-size: 32px; 
+    font-weight: bold;
+    text-align: left;
+}
+#contentBox .gram_3 .gram_3_photo {
+    width: 190px; 
+    height: 190px; 
+    margin-right: 10px; 
+    margin-bottom: 10px; 
+    float: left; 
+    // background: url('../images/images/C2005270925279578r.jpeg') no-repeat;
+    // background-size: 100%;
+    // background-repeat: no-repeat;
+}
+#contentBox .gram_3 .gram_3_photo img {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+}
+#contentBox .gram_3 a:nth-child(odd) .gram_3_photo { 
+    margin-right: 0; 
+}
+#contentBox .gram_3 a:last-child .gram_3_photo { 
+    margin-bottom: 15px; 
+}
+
+/* gram_write */
+#contentBox .gramW_1 { 
+    margin: 15px; 
+}
+#contentBox .gramW_1 div {
+    position: relative;
+}
+#contentBox .gramW_1 div .gramW_1_back { 
+    width: 25px; 
+    height: 25px; 
+    background: url('../images/icon/back.png') no-repeat; 
+    background-size: 100%; 
+    display: inline-block; 
+    position: absolute; 
+    left: 0; 
+    top: 9px; 
+    cursor: pointer;
+}
+#contentBox .gramW_1 div p {
+    position: relative;
+    left: 35px;
+    text-align: left;
+}
+#contentBox .gramW_1 p { 
+    margin-bottom: 10px; 
+    font-size: 32px; 
+    font-weight: bold; 
+}
+#contentBox .gramW_1 label { 
+    display: inline-block; 
+    color: #000; 
+    width: 100%; 
+    height: 50px; 
+    border: 1px solid #9e7ffe; 
+    text-align: center; 
+    line-height: 50px; 
+}
+#contentBox .gramW_1 input[type=file] { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip:rect(0,0,0,0); 
+    border: 0; 
+}
+#contentBox .gramW_1 #gramW_1_photo { 
+    width: 100%; 
+    height: 390px; 
+    margin: 10px 0; 
+    border: 1px solid #ddd; 
+    text-align: center; 
+}
+#contentBox .gramW_1 #gramW_1_photo #photoPre { 
+    font-size: 30px; 
+    color: #ddd; 
+    line-height: 400px; 
+}
+#contentBox .gramW_1 #gramW_1_photo img {
+    width: 100%; 
+    height: 100%; 
+    display: none;
+}
+#contentBox .gramW_1 textarea { 
+    width: 100%; 
+    height: 150px; 
+}
+#contentBox .gramW_1 #warning { 
+    font-size: 18px; 
+    text-align: center; 
+    margin-bottom: 10px; 
+} 
+#contentBox .gramW_1 input[type=submit] { 
+    width: 100%; 
+    height: 50px; 
+    border: 1px solid #9e7ffe; 
+    text-align: center; 
+    line-height: 50px; 
+    background: #fff; 
+}
+
+/* gram_post */
+#contentBox .gramP_1 { 
+    margin: 20px; 
+    margin-bottom: 0;
+    position: relative;
+    text-align: left;
+}
+#contentBox .gramP_1 .gramP_1_back { 
+    width: 25px; 
+    height: 25px; 
+    background: url('../images/icon/back.png') no-repeat; 
+    background-size: 100%; 
+    display: inline-block; 
+    position: relative; 
+    left: 0; 
+    top: -7px; 
+    cursor: pointer;
+    margin-right: 15px;
+}
+#contentBox .gramP_1 .gramP_1_myPho { 
+    width: 40px; 
+    height: 40px; 
+    border-radius: 50%; 
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.28); 
+    display: inline-block; 
+    padding: 3px; 
+}
+#contentBox .gramP_1 .gramP_1_myPho img {
+    width: 100%;
+    height: 100%;
+    size: 100%;
+    border-radius: 50%;
+}
+#contentBox .gramP_1 .gramP_1_myPho div { 
+    width: 100%; 
+    height: 100%; 
+    // background: url('../images/images/C2005270925279578r.jpeg') no-repeat; 
+    background-size: 100%; 
+    display: inline-block; 
+    border-radius: 50%; 
+}
+#contentBox .gramP_1 #gramP_1_id { 
+    color: #000; 
+    font-size: 24px; 
+    position: relative; 
+    top: -9px; 
+    margin-left: 10px; 
+}
+#contentBox .gramP_1 #gramP_1_hot { 
+    width: 50px; 
+    height: 30px; 
+    padding: 0 5px; 
+    background: #FF0000; 
+    color: #fff; 
+    font-size: 20px; 
+    text-align: center; 
+    border-radius: 30px; 
+    display: inline-block; 
+    position: relative; 
+    top: -11px; 
+    margin-left: 10px; 
+}
+#contentBox .gramP_1 .gramP_1_trash { 
+    width: 35px; 
+    height: 35px; 
+    background-size: 100%; 
+    display: inline-block; 
+    position: absolute;
+    right: 5px; 
+    top: 10px;
+    cursor: pointer;
+}
+#contentBox .gramP_1 .gramP_1_trash svg {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    bottom: 1px;
+}
+#contentBox .gramP_1 #gramP_1_decla { 
+    width: 40px; 
+    height: 40px; 
+    background: url('../images/icon/png.png') no-repeat; 
+    background-size: 100%; 
+    display: inline-block; 
+    position: absolute; 
+    right: 5px; 
+    top: 0; 
+    cursor: pointer;
+}
+
+#contentBox .gramP_2 { 
+    margin: 15px; 
+    margin-top: 10px;
+    text-align: left;
+}
+#contentBox .gramP_2 #gramP_2_photo { 
+    width: 100%; 
+    height: 390px; 
+}
+#contentBox .gramP_2 #gramP_2_photo img { 
+    width: 100%; 
+    height: 100%; 
+}
+
+#contentBox .gramP_3 { 
+    margin: 0 15px; 
+    padding-bottom: 5px; 
+    border-bottom: 1px solid #E8E8E8;
+    text-align: left;
+}
+#contentBox .gramP_3 #gramP_3_heart { 
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 5px; 
+    background: url('../images/icon/free-icon-heart-744635.png') no-repeat; 
+    background-size: 100%; 
+    cursor: pointer; 
+}
+#contentBox .gramP_3 #gramP_3_heart.on { 
+    width: 30px; 
+    height: 30px; 
+    margin-bottom: 5px; 
+    background: url('../images/icon/heart.png') no-repeat; 
+    background-size: 100%; 
+    cursor: pointer; 
+}
+#contentBox .gramP_3 p { 
+    margin-bottom: 5px; 
+}
+#contentBox .gramP_3 #gramP_3_id { 
+    font-weight: bold; 
+    padding-right: 10px; 
+}
+
+#contentBox .gramP_4 { 
+    margin: 15px; 
+    margin-top: 10px;
+    text-align: left;
+}
+#contentBox .gramP_4 p { 
+    margin-bottom: 5px;
+}
+#contentBox .gramP_4 p:last-child { 
+    margin-bottom: 0;
+}
+#contentBox .gramP_4 #gramP_4_reID { 
+    font-weight: bold; 
+    padding-right: 10px; 
+}
+
+#contentBox .gramP_5 { 
+    margin: 0 15px;
+    margin-bottom: 15px;
+    text-align: left;
+}
+#contentBox .gramP_5 form {
+    position: relative;
+}
+#contentBox .gramP_5 #gramP_5_id { 
+    margin-top: 5px; 
+    display: inline-block; 
+    padding-right: 5px; 
+    border: 1px solid #767676; 
+    border-right: none; 
+    padding: 5px; 
+}
+#contentBox .gramP_5 input { 
+    border: 1px solid #767676; 
+    width: 295px; 
+    height: 31px; 
+    position: relative; 
+    top: -1px; 
+    margin-right: 2px; 
+}
+#contentBox .gramP_5 .gramP_5_button { 
+    width: 45px; 
+    height: 33px; 
+    border: 1px solid #767676; 
+    background: #fff; 
+    top: 5px;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    border-radius: 0;
+    margin: 0;
+    position: absolute;
+    right: 0;
+}
+// 신고
+.pop-layer2 {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    max-width: 392px;
+    max-height: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    z-index: 10;
+}
+
+.pop-layer2 .pop-container2 {
+    padding: 36px 0;
+    text-align: center;
+}
+
+.pop-layer2 .pop-container2 > div:first-child { padding: 0 44px; }
+.pop-layer2 .pop-container2 > div:first-child h2 { font-size: 20px; font-weight: 600; margin-bottom: 5px; }
+.pop-layer2 .pop-container2 > div:first-child p { font-size: 16px; color: #5c5c5c; }
+.pop-layer2 .pop-container2 hr { margin: 24px 0; height: 1px; background: #e8e8e8; border-width: 0; box-sizing: initial; overflow: visible; }
+.pop-layer2 .pop-container2 > div:last-child { padding: 0 44px; }
+.pop-layer2 .pop-container2 > div:last-child ul { text-align: left; margin: 20px 0; list-style: none; font-weight: 500; }
+.pop-layer2 .pop-container2 > div:last-child ul li { margin-bottom: 24px; align-items: center; display: flex; cursor: pointer; }
+.pop-layer2 .pop-container2 > div:last-child ul li:hover { background: none; border: none; color: #2c2c2c; }
+.pop-layer2 .pop-container2 > div:last-child ul li a { position: relative; }
+.pop-layer2 .pop-container2 > div:last-child ul li a:hover { color: #2c2c2c; }
+.pop-layer2 .pop-container2 > div:last-child ul li a div:first-child { position: relative; width: 40px; vertical-align: middle; margin-right: 20px; height: 40px; display: inline-block; }
+.pop-layer2 .pop-container2 > div:last-child ul li a div:first-child img { width: 40px; height: 40px; position: absolute; top: 0; left: 0; vertical-align: middle; }
+.pop-layer2 .pop-container2 > div:last-child ul li a div:last-child { padding: 12px 0; flex: 1; display: inline-block; border-bottom: thin solid #e8e8e8; position: absolute; bottom: 0; width: 244px; }
+.pop-layer2 .pop-container2 > div:last-child button { width: 100%; padding-right: 24px; padding-left: 24px; min-height: 54px; max-width: 100%; margin-right: auto; margin-left: auto; font-weight: 600; color: pointer; color: #fff; background: #dadfe6; border-radius: 100px; border: none; font-size: 16px; }
+.pop-layer2 .pop-container2 > div:last-child button:hover, .pop-layer2 .pop-container2 > div:last-child button:active { background: linear-gradient( to left, #FFD7DD, #9E7FFE ); }
+.pop-layer2 .pop-container2 > div:last-child ul li a.on { color: #9e9e9e; }
+
+.dim-layer2 {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+}
+
+.dim-layer2 .dimBg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .5;
+    filter: alpha(opacity=50);
+}
+
+.dim-layer2 .pop-layer2 {
+    display: block;
+}
+
+@media (max-width:768px){
+    /* gram_main */
+    #contentBox .gram_2 p { 
+        font-size: 2em; 
+    }
+    #contentBox .gram_2 a .gram_2_photo { 
+        width: 48%; 
+        height: 44.1vw; 
+        margin-right: 4%; 
+        margin-bottom: 4%; 
+    }
+
+    #contentBox .gram_3 p { 
+        font-size: 2em; 
+    }
+    #contentBox .gram_3 a .gram_3_photo { 
+        width: 48%; 
+        height: 44.1vw; 
+        margin-right: 4%; 
+        margin-bottom: 4%; 
+    }
+
+    /* gram_write */
+    #contentBox .gramW_1 { 
+        margin: 15px; 
+    }
+    #contentBox .gramW_1 p { 
+        font-size: 1.5em; 
+    }
+    #contentBox .gramW_1 #gramW_1_photo { 
+        max-width: 400px; 
+        width: 100%; 
+        height: 82vw; 
+        margin: 10px auto; 
+    }
+    #contentBox .gramW_1 #gramW_1_photo #photoPre { 
+        font-size: 1.4em; 
+        line-height: 82vw; 
+    }
+    #contentBox .gramW_1 textarea { 
+        min-height: 100px; 
+        height: 20vw; 
+    }
+    #contentBox .gramW_1 #warning { 
+        font-size: 1.2em; 
+        word-break: keep-all; 
+    }
+
+    /* gram_post */
+    #contentBox .gramP_1 { 
+        position: relative; 
+    }
+    #contentBox .gramP_1 #gramP_1_id { 
+        color: #000; 
+        font-size: 1.5em; 
+    }
+    #contentBox .gramP_1 #gramP_1_decla { 
+        right: 10px; 
+        top: 0; 
+    }
+    #contentBox .gramP_1 a:last-child { 
+        position: absolute; 
+        right: 1%; 
+        top: 7px; 
+    }
+
+    #contentBox .gramP_2 { 
+        margin: 15px; 
+        margin-top: 10px; 
+    }
+    #contentBox .gramP_2 #gramP_2_photo { 
+        max-width: 420px; 
+        width: 100%; 
+        height: auto; 
+        margin: 0 auto; 
+    }
+
+    #contentBox .gramP_5 { 
+        margin: 0 15px 15px; 
+        position: relative; 
+    }
+    #contentBox .gramP_5 input { 
+        width: 70%; 
+        top: 0; 
+    }
+    #contentBox .gramP_5 .gramP_id {
+        position: relative;
+        top: 1px;
+        padding: 4px !important;
+    }
+    #contentBox .gramP_5 button { 
+        width: 15%; 
+        top: 5px; 
+        position: absolute; 
+        right: 0;
+    }
+
+    .pop-layer2 {
+        display: none;
+        position: relative;
+        top: 0;
+        left: 0;
+        max-width: 100%;
+        max-height: 100%;
+        border-radius: 0;
+        height: 100%;
+    }
+    
+    .pop-layer2 .pop-container2 {
+        padding: 65px 0;
+    }
+
+    .pop-layer2 .pop-container2 > div:last-child { padding: 0 16%; }
+    .pop-layer2 .pop-container2 > div:last-child ul { width: 15em; margin: 20px auto; }
+    .pop-layer2 .pop-container2 > div:last-child ul li a div:last-child { width: 10em; }
+}
